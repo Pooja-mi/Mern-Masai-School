@@ -10,6 +10,8 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="manifest.json">
+    <link rel="stylesheet" href="app.css">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,20 +26,49 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Project-Management-Board</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="container">
+      <div class="board">
+          <div class="column" id="to-do">
+              <h2>To Do</h2>
+              <div class="task">
+                  <h3>Fix navigation bug</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas dictum libero, vel tristique odio pulvinar vitae.</p>
+              </div>
+          </div>
+          <div class="column" id="in-progress">
+              <h2>In Progress</h2>
+              <div class="task">
+<h3>Release new website</h3>
+                  <p>Hasellus eleifend lacus vitae est ultrices placerat. Nunc at risus id risus venenatis laoreet sit amet cur.</p>
+              </div>
+              <div class="task">
+                  <h3>Deploy server on acceptance environment</h3>
+                  <p>Pellentesque pharetra fermentum sapien, aliquet ultrices ligula mattis porttitor.</p>
+              </div>
+          </div>
+          <div class="column" id="review">
+              <h2>Review</h2>
+              <div class="task">
+                  <h3>Change button color</h3>
+                  <p>Suspendisse ac lorem a neque tempus luctus non aliquam sapien. Cras ut lacus endum, placerat nibh eu, impus neque.</p>
+              </div>
+              <div class="task">
+                  <h3>Change layout for the content page</h3>
+                  <p>Cras tellus ligula, mattis at facilisis eu, ultricies vel elit. Ut aliquam volutpat lacus, a rutrum sem vulputate non.</p>
+              </div>
+          </div>
+          <div class="column" id="done">
+              <h2>Done</h2>
+              <div class="task">
+                  <h3>Complete the registration flow</h3>
+                  <p>Curabitur nec sem lorem. Donec venenatis, arcu vitae malesuada consequat, dolor ante placerat mi, in fermentum diam ipsum id libero.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
   </body>
 </html>
